@@ -1,0 +1,66 @@
+<html>
+<head>
+<style>
+h1{
+font-family:verdana;color:blue;
+}
+body{
+background-color:#ccccff;text-align:center;
+}
+p{
+font-size:20px;color:#0000ff
+}
+
+
+}
+</style>
+	<script>
+	
+	function gambarakhir(x){
+		x.style.height = "500px";
+		x.style.width = "450px";
+	}
+	
+	function gambarawal(x) {
+		x.style.height = "10px";
+		x.style.width = "10px";
+	}
+	
+
+function makanmu() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("pop").innerHTML = "kamu memilih: " + x;
+}
+
+function aku(){
+alert("ini contoh fungsi onload");
+}
+
+	</script>
+	
+</head>
+<body onload ="aku()">
+<h1>contoh onmouse over dan out</h1>
+<img onmouseover="gambarakhir(this)" onmouseout="gambarawal(this)" border="0" src="https://images3.alphacoders.com/274/thumb-350-274725.jpg" alt="koecheng oren imoet" width="10" heigt="10">
+<br><br>
+
+<p>contoh onclick</p>
+<button onclick="document.getElementById('uwu').innerHTML=Date()">sekarang jam berapa ya??</button>
+<p id="uwu"></p>
+<br><br>
+<p>contoh onchange</p>
+<p>pilih makanan mu.</p>
+
+<select id="mySelect" onchange="makanmu()">
+  <option value="Ayam">Ayam</option>
+  <option value="Bubur">Bubur</option>
+  <option value="Makaroni">Makaroni</option>
+  <option value="sate">sate</option>
+</select>
+
+<p id="pop"></p>
+
+
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+<script>
+
+var angka =[23000,44000,17000,76000];
+
+//method foreach//
+angka.forEach(function(value, index){
+	document.write(index + ":" +value);
+	document.write("<br>");
+	
+});
+
+
+//method map
+
+var contoh_map = angka.map( function(val){
+	return val-(val * 20/100);
+});
+document.write("<br>");
+document.write( contoh_map );
+
+//method filter
+
+var contoh_filter=angka.filter(function(v){
+	return v > 30000;
+});
+
+document.write("<br><br>");
+document.write( contoh_filter );
+</script>

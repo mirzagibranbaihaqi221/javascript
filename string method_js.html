@@ -1,0 +1,138 @@
+	<html>
+	<head>
+	<style>
+	
+	</style>
+		</head>
+		<body>
+	
+		<h1> contoh string method</h1>
+		<p>string length</p>
+		<p id="po"></p>
+		<hr>
+		
+		<p>finding string in a string index of</p>
+		<p id="boku"></p>
+		<hr>
+		
+		<p> contoh searching string in a string</p>
+		<p id ="uwuw"></p>
+		<hr>
+		
+		<p>slice method</p>
+		<p id ="ota"></p>
+		<hr>
+		
+		<p>substr method</p>
+		<p id ="muda"></p>
+		<hr>
+		
+		<p>replacing stirng content</p>
+		<button onclick="myFunction()">Try it</button>
+    <p id="desa">aku suka kamu!</p>
+    <hr>
+    
+    <p>converting to upperchase</p>
+    <button onclick="amboi()"> cobaa ayoo </button>
+    <p id="aku">aku adalah anak gembala</p>
+    <hr>
+    
+    <p>concat</p>
+    <p id="be"></p>
+    <hr>
+    
+    <p>trim string</p>
+    <button onclick="akumau()">coba lah</button>
+    <hr>
+    
+    <p>CharAt</p>
+    <p id="de"></p>
+    <hr>
+    
+    <p>charcodeAt</p>
+    <p id="ai"></p>
+    <hr>
+    
+    <p>property acces</p>
+    <p id="io"></p>
+    <hr>
+    
+    <p>string to an array</p>
+    <button onclick="olo()">coba di pencet</button>
+    <p id="lol"></p>
+    <hr>
+		<script>
+				//string length//
+				var txt = "entah apaa yang merasuki muuuu!!!!";
+				document.getElementById("po").innerHTML = txt.length;
+				
+				//finding stirng in a string//
+				var str = "saya anak dari 'anak' nya orang!";
+				var pos = str.indexOf("anak");
+				document.getElementById("boku").innerHTML = pos;
+				
+				//searching string in a string//
+				var str = "aku punya mobil yang 'kubeli' dari pabrik 					mobil";
+				var pos = str.search("kubeli");
+				document.getElementById("uwuw").innerHTML = pos;
+				
+				//slice method//
+				var str = "saya anak dari bapak saya yang punya bapak 				yang punya anak";
+				var res = str.slice(15,20);
+				document.getElementById("ota").innerHTML = res;
+				
+				//substr method//
+				var str = "omaewa mou shindeiru";
+				var res = str.substr(7);
+				document.getElementById("muda").innerHTML = res;
+				
+				//replace string//
+				function myFunction() {
+  var str = document.getElementById("desa").innerHTML; 
+  var txt = str.replace("suka","benci");
+  document.getElementById("desa").innerHTML = txt;
+}
+
+		//string toupperchase//
+		function amboi(){
+			var text = document.getElementById("aku").innerHTML;
+			document.getElementById("aku").innerHTML = text.toUpperCase();
+		} 
+		
+		//concat//
+		var text1 = "suatu";
+		var text2 = "saat";
+		var text3 = "aku";
+		var text4 = "berpikir";
+		var text5 = "untuk apa";
+		var text6 = "aku disini";
+		var text7 = text1.concat(" ",text2," ",text3," ",text4,"    ",text5," ",text6);
+		document.getElementById("be").innerHTML = text7;
+		
+		//trim string//
+		function akumau(){
+			var str = "    heheheheheheh   ";
+			alert(str.trim());
+		}
+		
+		//charAt()//
+		var str = "bambang";
+document.getElementById("de").innerHTML = str.charAt(4);
+
+		//charcodeAt//
+		var str = "aku adalah anak gembala";
+document.getElementById("ai").innerHTML = str.charCodeAt(4);
+
+//property acces//
+	var str = "sapi menghasilkan susu";
+document.getElementById("io").innerHTML = str[5];
+
+//converting array to string//
+		function olo(){
+			var str = "aku,kamu,dia";
+			var arr = str.split(",");
+			document.getElementById("lol").innerHTML = arr[1];
+		}
+		</script>
+		</body>
+			</html>

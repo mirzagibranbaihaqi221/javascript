@@ -1,0 +1,126 @@
+<html>
+	<head>
+			
+	<head>
+
+		<body>
+			<p>  contoh  converting array to string   </p>
+			<p id="gibs"></p>
+			<hr>
+			
+			<p> contoh popping </p>
+			<p id="o"></p>
+			<p id="i"></p>
+			<hr>
+			
+			<p>conto pushing</p>
+			<button onclick="ayam()">teken</button>
+			<p id="a"></p>
+			<hr>
+			
+			<p>contoh shift</p>
+			<p id="kun"></p>
+			<p id="chan"></p>
+			<hr>
+			
+			<p>contoh dari changing element</p>
+			<p id="eto"></p>
+			<p id="ara"></p>
+			<hr>
+			
+			<p>contoh dari deleting element</p>
+			<p id="ee"></p>
+			<p id="aa"></p>
+			<hr>
+			
+		<p>contoh penggunaan splice.</p>
+		<button onclick="fam()">Try it</button>
+		<p id="dem1"></p>
+		<p id="dem2"></p>
+			<hr>
+			
+			<p>contoh splice untuk remove </p>
+			<button onclick="ph()">teken</button>
+			<p id="x"></p>
+			<hr>
+			
+			<p>contoh merge two arrays</p>
+			<p id="z"></p>
+			<hr>
+			
+			<p>contoh merge three arrays</p>
+			<p id="g"></p>
+			<hr>
+			
+			<p>contoh slice</p>
+			<p id="oi"></p>
+			<hr>
+			
+			<p>contoh automatic to string</p>
+			<p id="ho"></p>
+				<script>
+				var nama = ["gibran","gibs","gibby","minigibs"];
+				document.getElementById("gibs").innerHTML = nama.toString();
+				
+				var popping =["aku","kamu","dia"];
+				document.getElementById("o").innerHTML = popping;popping.pop();
+				document.getElementById("i").innerHTML = popping;
+				
+				var unggas =["ayam","merpati","gagak","penguin"];
+				document.getElementById("a").innerHTML = unggas;
+					function ayam() {
+						unggas.push("gagak");
+						document.getElementById("a").innerHTML = unggas;
+					}
+					
+				var diriku =["tampan","gagah","perkasa","kuat"];
+				document.getElementById("kun").innerHTML = diriku;
+				diriku.shift();
+				document.getElementById("chan").innerHTML = diriku;
+				
+				var alat =["palu","arit","cangkul","sekop","gergaji"];
+				document.getElementById("eto").innerHTML = alat;
+				alat[1] = "golok";
+				document.getElementById("ara").innerHTML = alat;
+				
+				var alpa =["bravo","charlie","delta","foxtrot","zulu"];
+				document.getElementById("ee").innerHTML =
+				"kode saya:" + alpa[4];
+				delete alpa[4];
+				document.getElementById("aa").innerHTML =
+				"kode saya:" + alpa[4];
+				
+		var fams = ["paps", "mams", "bro", "sis"];
+document.getElementById("dem1").innerHTML = "Array yang asli:<br>" + fams;
+function fam() {
+  fams.splice(2, 0, "grandpaps", "grandmams");
+  document.getElementById("dem2").innerHTML = "Array yang baru:<br>" + fams;
+}
+
+				var veterbrata = ["sapi","manusia","kambing","kuda"];
+				document.getElementById("x").innerHTML = veterbrata;
+				function ph() {
+					veterbrata.splice(0,1);
+					document.getElementById("x").innerHTML = veterbrata;
+				}
+				
+				var o =["air","susu"];
+				var i =["nasi","ikan","sayur","daging"];
+				var sehat =o.concat(i);
+				document.getElementById("z").innerHTML = sehat;
+				
+				var q =["air","susu"];
+				var w =["nasi","ikan","sayur","daging"];
+				var y =["telur","ayam"];
+				var s =q.concat(w,y);
+				document.getElementById("g").innerHTML = s;
+				
+				var makan = ["nasi","ayam","daging"];
+				var lauk = makan.slice(1);
+				document.getElementById("oi").innerHTML = makan + "<br><br>" + lauk;
+				
+				var al = ["alpha", "bravo", "silo", "tombstone"];
+				document.getElementById("ho").innerHTML = al.toString();
+				</script>
+		</body>
+</html>
